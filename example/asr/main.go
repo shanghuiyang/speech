@@ -26,6 +26,7 @@ func main() {
 	data, err := ioutil.ReadFile(speechFile)
 	if err != nil {
 		fmt.Printf("failed to read %v, error: %v\n", speechFile, err)
+		os.Exit(1)
 	}
 
 	auth := oauth.NewBaiduOauth(baiduSpeechAPIKey, baiduSpeechSecretKey, oauth.NewCacheImp())
