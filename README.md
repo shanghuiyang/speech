@@ -25,7 +25,7 @@ const (
 func main() {
 	data, err := ioutil.ReadFile("wav/sample.wav")
 	if err != nil {
-		fmt.Printf("failed to read wav/sample.wav, error: %v\n", err)
+		log.Printf("failed to read wav/sample.wav, error: %v\n", err)
         os.Exit(1)
 	}
 

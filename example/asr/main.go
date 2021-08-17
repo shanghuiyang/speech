@@ -25,7 +25,7 @@ func main() {
 
 	data, err := ioutil.ReadFile(speechFile)
 	if err != nil {
-		fmt.Printf("failed to read %v, error: %v\n", speechFile, err)
+		log.Printf("failed to read %v, error: %v", speechFile, err)
 		os.Exit(1)
 	}
 
